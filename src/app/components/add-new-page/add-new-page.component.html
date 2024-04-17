@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="infoForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="save()">Save Task</button>
+</div>
+
+<!-- <form [formGroup]="infoForm" >
+  <mat-card>
+    <mat-card-header>
+      {{title}}
+    </mat-card-header>
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="onNoClick()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="save()">Save Task</button>
+    </mat-card-actions>
+  </mat-card>
+
+</form> -->
